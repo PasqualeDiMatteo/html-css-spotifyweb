@@ -34,6 +34,7 @@ body{
 a{
     text-decoration: none;
 }
+
 ul{
     list-style: none;
 }
@@ -94,8 +95,17 @@ img{
 .color-gray{
     color: var(--color-gray);
 }
+
 .img-gray{
     filter:invert(.5)
+}
+
+.gap-25{
+    gap: 25px;
+}
+
+.p-5{
+    padding: 5px;
 }
 
 .btn{
@@ -160,6 +170,7 @@ header{
     width: 20px;
     margin-right: 10px;
 }
+
 .profile-img{
     width: 20px;
     height: 20px;
@@ -205,6 +216,71 @@ footer{
 footer > *{
     width: 100%;
 }
+.song-author{
+    font-weight: 600;
+}
+
+.album{
+    width: 50px;
+    height: 50px;
+}
+
+.song i{
+    padding: 5px;
+}
+
+footer .info-song{
+    margin: 10px;
+}
+
+
+/* Progressbar */
+
+.progress-bar{
+    width: 75%;
+    height: 3px;
+    background-color: var(--color-gray);
+    border-radius: 2px;
+    margin: 10px 10px;
+    position: relative;
+}
+
+.progress-bar{
+    width: 75%;
+    height: 3px;
+    background-color: var(--color-gray);
+    border-radius: 2px;
+    margin: 10px 10px;
+    position: relative;
+}
+
+.progress-bar::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 20%;
+    left: 0;
+    top: 0;
+}
+
+.minute{
+    font-size: 12px;
+}
+
+.control-player .fa-play{
+    width: 30px;
+    height: 30px;
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+
+.volume-bar{
+    width: 30%;
+}
 
 /* Query */
 
@@ -212,14 +288,21 @@ footer > *{
     #left-navbar{
         flex-basis: var(--navbar-lg-width);    
     }
+
     #left-navbar .logo{
         width: 75%;
     }
+
     .tablet{
         display: inline-block;
     }
+
     .mobile{
         display: none;
+    }
+
+    .mobile.d-flex{
+        display: block;
     }
 }
 

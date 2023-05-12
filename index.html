@@ -30,6 +30,9 @@
                 <img src="img/logo-small.svg" alt="logo" class="mobile">
                 <img src="img/logo.svg" alt="logo" class="tablet">
             </div>
+
+            <!-- Navbar Top -->
+
             <nav class="navbar-top">
                 <ul class="mb-20">
                     <li class="mb-10">
@@ -52,6 +55,9 @@
                     </li>
                  </ul>
             </nav>
+
+            <!-- Navbar Playlist -->
+
             <div class="playlist tablet">
                 <div class="mb-10">PLAYLIST</div>
                 <div class="add-playlist mb-20 d-flex align-center">
@@ -69,6 +75,7 @@
                 <li>Nome Playlist</li>
                 <li>Nome Playlist</li>    
             </ul>
+
             <!-- Navbar bottom -->
 
             <div class="f-grow"></div>
@@ -156,20 +163,53 @@
 
         <!-- Control left -->
 
-        <div class="song d-flex align-center">
-            Musica
+        <div class="song d-flex align-center f-shrink">
+            <div class="album">
+                <img src="img/sinister.jpeg" alt="sinister">
+            </div>
+            <div class="info-song">
+                <div class="song-author">Sinister</div>
+                <div class="song-name color-gray">Brano Nome</div>
+            </div>
+            <div class="mobile buttons flex-col d-flex color-gray">
+                <i class="fa-regular fa-heart c-pointer"></i>
+                <i class="fa-regular fa-folder c-pointer"></i>
+            </div>
         </div>
 
         <!-- Control center -->
 
-        <div class="control flex-grow d-flex justify-center align-center">
-            play stop next
+        <div class="control d-flex justify-center flex-col">
+
+            <!-- Player -->
+
+            <div class="control-player d-flex align-center justify-center gap-25 mb-10">
+                <i class="fa-solid fa-shuffle c-pointer"></i>
+                <i class="fa-solid fa-backward-step c-pointer"></i>
+                <span class="play-btn d-flex align-center justify-center          c-pointer"><i class="fa-solid fa-play"></i>
+                </span>
+                <i class="fa-solid fa-forward-step c-pointer"></i>
+                <i class="fa-solid fa-rotate-right c-pointer"></i>
+            </div>
+
+            <!-- Progres Bar -->
+
+            <div class="progress d-flex align-center justify-center">
+                <div class="minute min-played text-bold">0:25</div>
+                <div class="progress-bar c-pointer"></div>
+                <div class="minute min-left text-bold">4:35</div>
+            </div>
         </div>
 
         <!-- Control right -->
 
-        <div class="volume d-flex align-center">
-            volume
+        <div class="volume d-flex align-center justify-end f-shrink">
+            <div class="mobile d-flex">
+                <i class="fa-solid fa-list c-pointer p-5"></i>
+                <i class="fa-solid fa-desktop c-pointer p-5"></i>
+                <i class="fa-solid fa-volume-high c-pointer p-5"></i>
+            </div>
+            <div class="progress-bar volume-bar"></div>
         </div>
     </footer>
 </body>
