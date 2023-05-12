@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom Properties */
+
+:root{
+    --navbar-bg-color: #000000;
+    --hdr-bg-color: #080b12;
+    --footer-bg-color: #282828;
+    --main-bg-color: #141922;
+}
+
+/* Generals */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
