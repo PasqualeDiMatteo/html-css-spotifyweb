@@ -14,6 +14,7 @@
     --header-footer-height: 80px;
     --navbar-lg-width: 300px;
     --navbar-xs-width: 50px;
+    --color-gray:#6b6b6b;
 }
 
 /* Generals */
@@ -35,6 +36,10 @@ a{
 }
 ul{
     list-style: none;
+}
+
+img{
+    max-width: 100%;
 }
 
 /* Utilities */
@@ -74,6 +79,24 @@ ul{
 .f-grow{
     flex-grow: 1;
 }
+.f-shrink{
+    flex-shrink: 1;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.color-gray{
+    color: var(--color-gray);
+}
+.img-gray{
+    filter:invert(.5)
+}
 
 .btn{
     color: white;
@@ -102,8 +125,8 @@ header{
     flex: 0 0 var(--navbar-xs-width);
     height: 100%;
     color: white;
-    overflow: hidden;
-    padding: 25px;
+    overflow-y: hidden;
+    padding: 10px;
 }
 
 #left-navbar > *{
@@ -111,8 +134,43 @@ header{
 }
 
 .playlist-ul{
-    height: 350px;
+    min-height: 70px;
     overflow-y: auto;
+}
+
+.playlist-ul li{
+    margin-bottom: 10px;
+}
+
+.navbar-top img{
+    width: 30px;
+}
+
+.simbol-add{
+    color: black;
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    background-color: var(--color-gray);
+    margin-right: 15px;
+}
+
+.download-img{
+    width: 20px;
+    margin-right: 10px;
+}
+.profile-img{
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-gray);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-name{
+    font-weight: 600;
+    margin-left: 10px;
 }
 
 /* Main */
@@ -129,6 +187,10 @@ main{
     min-height: 300px;
     border: 1px solid white;
     flex: 0 0 50%;
+}
+
+.tablet{
+    display: none;
 }
 
 /*  Footer */
@@ -150,6 +212,15 @@ footer > *{
     #left-navbar{
         flex-basis: var(--navbar-lg-width);    
     }
+    #left-navbar .logo{
+        width: 75%;
+    }
+    .tablet{
+        display: inline-block;
+    }
+    .mobile{
+        display: none;
+    }
 }
 
 /* Tablet */
@@ -157,6 +228,10 @@ footer > *{
 @media screen and (min-width: 768px){
     .playlist-music{
         flex-basis: 25%;
+    }
+    .download{
+        border-bottom: 1px solid var(--color-gray);
+        padding-bottom: 5px;
     }
 }
 
