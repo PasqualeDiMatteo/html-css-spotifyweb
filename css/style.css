@@ -8,13 +8,68 @@
 
 :root{
     --navbar-bg-color: #000000;
-    --hdr-bg-color: #080b12;
+    --header-bg-color: #080b12;
     --footer-bg-color: #282828;
     --main-bg-color: #141922;
+    --header-footer-height: 80px;
+    --navbar-lg-width: 300px;
+    --navbar-xs-width: 50px;
 }
 
 /* Generals */
 
 body{
     font-family: 'Montserrat', sans-serif;
+}
+#top-content{
+    height: calc(100vh - var(--header-footer-height));
+    display: flex;
+}
+#right-content{
+    flex-grow: 1;
+}
+
+/* Header */
+
+header{
+    position: sticky;
+    background-color: var(--header-bg-color);
+    right: 0;
+    top: 0;
+    height: var(--header-footer-height);
+    width: 100%;
+}
+
+/* Menu */
+
+#left-navbar{
+    background-color: var(--navbar-bg-color);
+    flex: 0 0 var(--navbar-xs-width);
+    height: 100%;
+}
+
+/* Main */
+
+main{
+    background-color: var(--main-bg-color);
+    overflow-y: auto;
+    height: calc(100vh - var(--header-footer-height) * 2);
+    flex-grow: 1;
+    color: white;
+}
+
+/*  Footer */
+
+footer{
+    background-color: var(--footer-bg-color);
+    height: var(--header-footer-height);
+}
+
+
+/* Query */
+
+@media screen and (min-width: 600px) {
+    #left-navbar{
+        flex-basis: var(--navbar-lg-width);    
+    }
 }
