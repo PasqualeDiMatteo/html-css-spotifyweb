@@ -20,6 +20,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 #top-content{
     height: calc(100vh - var(--header-footer-height));
@@ -31,6 +32,9 @@ body{
 
 a{
     text-decoration: none;
+}
+ul{
+    list-style: none;
 }
 
 /* Utilities */
@@ -121,6 +125,12 @@ main{
     color: white;
 }
 
+.playlist-music{
+    min-height: 300px;
+    border: 1px solid white;
+    flex: 0 0 50%;
+}
+
 /*  Footer */
 
 footer{
@@ -139,5 +149,21 @@ footer > *{
 @media screen and (min-width: 600px) {
     #left-navbar{
         flex-basis: var(--navbar-lg-width);    
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px){
+    .playlist-music{
+        flex-basis: 25%;
+    }
+}
+
+/* Laptop */
+
+@media screen and (min-width: 992px){
+    .playlist-music{
+        flex-basis: calc(100% / 6);
     }
 }
