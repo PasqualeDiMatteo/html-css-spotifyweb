@@ -39,12 +39,32 @@ a{
     display: flex;
 }
 
+.flex-col{
+    flex-direction: column;
+}
+
 .justify-end{
     justify-content: flex-end;
 }
 
+.justify-start{
+    justify-content: flex-start;
+}
+
 .align-center{
     align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.f-grow{
+    flex-grow: 1;
 }
 
 .btn{
@@ -73,6 +93,18 @@ header{
     background-color: var(--navbar-bg-color);
     flex: 0 0 var(--navbar-xs-width);
     height: 100%;
+    color: white;
+    overflow: hidden;
+    padding: 25px;
+}
+
+#left-navbar > *{
+    width: 100%;
+}
+
+.playlist-ul{
+    height: 350px;
+    overflow-y: auto;
 }
 
 /* Main */
