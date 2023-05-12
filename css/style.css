@@ -29,6 +29,32 @@ body{
     flex-grow: 1;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* Utilities */
+
+.d-flex{
+    display: flex;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.btn{
+    color: white;
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 15px 25px;
+    font-weight: 600;
+}
+
 /* Header */
 
 header{
@@ -38,6 +64,7 @@ header{
     top: 0;
     height: var(--header-footer-height);
     width: 100%;
+    padding-right: 20px;
 }
 
 /* Menu */
