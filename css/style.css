@@ -43,6 +43,7 @@ ul{
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 h2{
@@ -131,12 +132,19 @@ h3{
     padding: 25px 0;
 }
 
+.pl-10{
+    padding-left: 10px;
+}
+
 .btn{
     color: white;
     border-radius: 25px;
     border: 1px solid white;
     padding: 15px 25px;
     font-weight: 600;
+}
+.c-pointer{
+    cursor: pointer;
 }
 
 /* Header */
@@ -159,7 +167,6 @@ header{
     height: 100%;
     color: white;
     overflow-y: hidden;
-    padding: 10px;
 }
 
 #left-navbar > *{
@@ -169,6 +176,7 @@ header{
 .playlist-ul{
     min-height: 70px;
     overflow-y: auto;
+    cursor: pointer;
 }
 
 .playlist-ul li{
@@ -221,6 +229,11 @@ main{
 .playlist-music{
     flex: 0 0 50%;
     padding: 5px;
+    cursor: pointer;
+}
+
+.album-img{
+    position: relative;
 }
 
 .tablet{
@@ -234,6 +247,13 @@ main{
 
 .popular-artists img{
     border-radius: 50%;
+}
+.album-img i{
+    display: none;
+}
+
+#navbar-music a{
+    font-size: 16px;
 }
 
 /*  Footer */
@@ -301,6 +321,99 @@ footer > *{
     width: 20%;
 }
 
+/* Hover */
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+li:hover{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
+
+i:hover{
+    color: white;
+}
+
+a:hover .img-gray{
+    filter: invert(0);
+}
+
+.song-name:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.download-text:hover{
+    color: white;
+}
+
+.add-playlist:hover .simbol-add{
+    background-color: white;
+}
+
+.add-playlist:hover .color-gray{
+    color: white;
+}
+
+i:hover{
+    transform: scale(1.2);
+}
+
+.progress-bar:hover::after{
+    background-color: green;
+}
+
+.navbar-top a:focus{
+    border-left: 2px solid green;
+    color: white;
+}
+
+.navbar-top a:focus .img-gray{
+    filter: invert(0);
+}
+
+#navbar-music a:focus{
+    border-bottom: 2px solid green;
+    color: white;
+}
+
+.album-img:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popular-artists .album-img:hover::before{
+    border-radius: 50%;
+}
+
+.album-img i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    line-height: 70px;
+    padding-left: 18px;
+}
+
+.album-img:hover i{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
 /* Query */
 
 @media screen and (min-width: 600px) {
@@ -337,6 +450,10 @@ footer > *{
     }
     footer .info-song{
         margin: 10px;
+    }
+
+    .account, .download{
+        justify-content: flex-start;
     }
 }
 
