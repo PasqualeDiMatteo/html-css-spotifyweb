@@ -12,7 +12,7 @@
     --footer-bg-color: #282828;
     --main-bg-color: #141922;
     --header-footer-height: 80px;
-    --navbar-lg-width: 300px;
+    --navbar-lg-width: 250px;
     --navbar-xs-width: 50px;
     --color-gray:#6b6b6b;
 }
@@ -23,10 +23,12 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+
 #top-content{
     height: calc(100vh - var(--header-footer-height));
     display: flex;
 }
+
 #right-content{
     flex-grow: 1;
 }
@@ -41,6 +43,14 @@ ul{
 
 img{
     max-width: 100%;
+}
+
+h2{
+    margin: 25px 0;
+}
+
+h3{
+    font-size: 16px;
 }
 
 /* Utilities */
@@ -80,6 +90,7 @@ img{
 .f-grow{
     flex-grow: 1;
 }
+
 .f-shrink{
     flex-shrink: 1;
 }
@@ -106,6 +117,18 @@ img{
 
 .p-5{
     padding: 5px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.p-25{
+    padding: 25px 0;
 }
 
 .btn{
@@ -192,16 +215,25 @@ main{
     height: calc(100vh - var(--header-footer-height) * 2);
     flex-grow: 1;
     color: white;
+    padding: 20px;
 }
 
 .playlist-music{
-    min-height: 300px;
-    border: 1px solid white;
     flex: 0 0 50%;
+    padding: 5px;
 }
 
 .tablet{
     display: none;
+}
+
+#navbar-music ul{
+    gap: 20px;
+    font-size: 12px;
+}
+
+.popular-artists img{
+    border-radius: 50%;
 }
 
 /*  Footer */
@@ -210,7 +242,7 @@ footer{
     background-color: var(--footer-bg-color);
     height: var(--header-footer-height);
     color: white;
-    padding: 25px;
+    padding: 25px 5px;
 }
 
 footer > *{
@@ -229,21 +261,7 @@ footer > *{
     padding: 5px;
 }
 
-footer .info-song{
-    margin: 10px;
-}
-
-
 /* Progressbar */
-
-.progress-bar{
-    width: 75%;
-    height: 3px;
-    background-color: var(--color-gray);
-    border-radius: 2px;
-    margin: 10px 10px;
-    position: relative;
-}
 
 .progress-bar{
     width: 75%;
@@ -279,7 +297,7 @@ footer .info-song{
 }
 
 .volume-bar{
-    width: 30%;
+    width: 20%;
 }
 
 /* Query */
@@ -310,11 +328,14 @@ footer .info-song{
 
 @media screen and (min-width: 768px){
     .playlist-music{
-        flex-basis: 25%;
+        flex-basis: calc(100% / 4);
     }
     .download{
         border-bottom: 1px solid var(--color-gray);
         padding-bottom: 5px;
+    }
+    footer .info-song{
+        margin: 10px;
     }
 }
 

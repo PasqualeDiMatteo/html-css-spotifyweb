@@ -43,13 +43,13 @@
                     </li>
                     <li class="mb-10">
                         <a href="#" class="d-flex align-center color-gray">
-                            <img src="img/search.svg" alt="home" class="img-gray">
+                            <img src="img/search.svg" alt="search" class="img-gray">
                             <span class="tablet">Cerca</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" class="d-flex align-center color-gray">
-                            <img src="img/libreria.svg" alt="home" class="img-gray">
+                            <img src="img/libreria.svg" alt="libreria" class="img-gray">
                             <span class="tablet">La tua libreria</span>
                         </a>
                     </li>
@@ -85,7 +85,7 @@
             </div>
             <div class="account d-flex align-center">
                 <img src="img/profile.svg" alt="account" class="profile-img">
-                <span class="tablet profile-name"> John Doe</span>
+                <span class="tablet profile-name">John Doe</span>
             </div>
         </div>
 
@@ -96,7 +96,7 @@
             <!-- Header -->
 
             <header class="d-flex justify-end align-center">
-                <a href="#" class="btn btn-header">EFFETTUA L'UPGRADE</a>
+                <a href="#" class="btn">EFFETTUA L'UPGRADE</a>
             </header>
 
             <!-- Main -->
@@ -105,14 +105,14 @@
 
                 <!-- Navbar Music -->
 
-                <nav id="navbar-music">
-                    <ul class="d-flex justify-center">
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
+                <nav id="navbar-music" class="color-gray mb-20">
+                    <ul class="d-flex justify-center f-wrap">
+                        <li>IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
                     </ul>
                 </nav>
 
@@ -121,12 +121,78 @@
                 <div class="recently">
                     <h2>Recently played</h2>
                     <div class="d-flex f-wrap">
-                        <div class="playlist-music"></div>
-                        <div class="playlist-music"></div>
-                        <div class="playlist-music"></div>
-                        <div class="playlist-music"></div>
-                        <div class="playlist-music"></div>
-                        <div class="playlist-music"></div>
+
+                        <!-- Playlist first -->
+
+                        <div class="playlist-music">
+                            <div class="album-img mb-10">
+                                <img src="img/metal_lifting.jpg" alt="Heavy Metal">
+                            </div>
+                            <div class="album-info text-center">
+                                <h3 class="song-name mb-10">Heavy Metal</h3>
+                                <div class="song-author color-gray">Subtitle</div>
+                            </div>
+                        </div>
+                    
+                        <!-- Playlist second -->
+
+                        <div class="playlist-music">
+                            <div class="album-img mb-10">
+                                <img src="img/stranger.jpeg" alt="Sranger Things">
+                            </div>
+                            <div class="album-info text-center">
+                                <h3 class="song-name mb-10">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                <div class="song-author color-gray">Kyle Dixon & Michael Stein</div>
+                            </div>
+                        </div>
+
+                        <!-- Playlist third -->
+
+                        <div class="playlist-music">
+                            <div class="album-img mb-10">
+                                <img src="img/aquietplace.jpeg" alt="A quiet place">
+                            </div>
+                            <div class="album-info text-center">
+                                <h3 class="song-name mb-10">A quiet place</h3>
+                                <div class="song-author color-gray">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <!-- Playlist fourth -->
+
+                        <div class="playlist-music">
+                            <div class="album-img mb-10">
+                                <img src="img/split.jpeg" alt="Split">
+                            </div>
+                            <div class="album-info text-center">
+                                <h3 class="song-name mb-10">Split</h3>
+                                <div class="song-author color-gray">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <!-- Playlist fifth -->
+
+                        <div class="playlist-music">
+                            <div class="album-img mb-10">
+                                <img src="img/cure.jpeg" alt="A cure for wellness">
+                            </div>
+                            <div class="album-info text-center">
+                                <h3 class="song-name mb-10">A cure for wellness</h3>
+                                <div class="song-author color-gray">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <!-- Playlist sixth-->
+
+                        <div class="playlist-music">
+                            <div class="album-img mb-10">
+                                <img src="img/sinister.jpeg" alt="Sinister">
+                            </div>
+                            <div class="album-info text-center">
+                                <h3 class="song-name mb-10">Sinister</h3>
+                                <div class="song-author color-gray">Subtitle</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -134,9 +200,29 @@
 
                 <div class="created-for">
                     <h2>Creato per John Doe</h2>
-                    <div class="d-flex flex-wrap">
-                        <div class="playlist-music"></div>
-                        <div class="playlist-music"></div>
+                    <p class="color-gray mb-20">Più ascolti, più accurati saranno i tuoi suggerimenti</p>
+                    <div class="d-flex f-wrap">
+
+                        <!-- Release Radar -->
+                        <div class="playlist-music">
+                            <div class="album-img mb-10">
+                                <img src="img/radar.jpeg" alt="Radar">
+                            </div>
+                            <div class="album-info text-center">
+                                <h3 class="song-name mb-10">Release Radar</h3>
+                            </div>
+                        </div>
+
+                        <!-- Daily Mix  -->
+
+                        <div class="playlist-music">
+                            <div class="album-img mb-10">
+                                <img src="img/mixdaily.jpeg" alt="Daily Mix">
+                            </div>
+                            <div class="album-info text-center">
+                                <h3 class="song-name mb-10">Daily Mix 1</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -144,9 +230,24 @@
 
                 <div class="popular-artists">
                     <h2>Artisti più popolari</h2>
-                    <div class="d-flex flex-wrap">
-                        <div class="playlist-music"></div>
-                        <div class="playlist-music"></div>
+                    <p class="color-gray mb-20">Più ascolti, più accurati saranno i tuoi suggerimenti</p>
+                    <div class="d-flex f-wrap">
+                        <div class="playlist-music">
+                            <div class="album-img mb-10">
+                                <img src="img/youg.jpeg" alt="Lana del Rey">
+                            </div>
+                            <div class="album-info text-center">
+                                <h3 class="song-name mb-10">Lana del Rey</h3>
+                            </div>
+                        </div>
+                        <div class="playlist-music">
+                            <div class="album-img mb-10">
+                                <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                            </div>
+                            <div class="album-info text-center">
+                                <h3 class="song-name mb-10">Ludovico Einaudi</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -164,14 +265,14 @@
         <!-- Control left -->
 
         <div class="song d-flex align-center f-shrink">
-            <div class="album">
+            <div class="album tablet">
                 <img src="img/sinister.jpeg" alt="sinister">
             </div>
             <div class="info-song">
                 <div class="song-author">Sinister</div>
                 <div class="song-name color-gray">Brano Nome</div>
             </div>
-            <div class="mobile buttons flex-col d-flex color-gray">
+            <div class="mobile flex-col d-flex color-gray">
                 <i class="fa-regular fa-heart c-pointer"></i>
                 <i class="fa-regular fa-folder c-pointer"></i>
             </div>
@@ -204,7 +305,7 @@
         <!-- Control right -->
 
         <div class="volume d-flex align-center justify-end f-shrink">
-            <div class="mobile d-flex">
+            <div class="mobile d-flex flex-col">
                 <i class="fa-solid fa-list c-pointer p-5"></i>
                 <i class="fa-solid fa-desktop c-pointer p-5"></i>
                 <i class="fa-solid fa-volume-high c-pointer p-5"></i>
