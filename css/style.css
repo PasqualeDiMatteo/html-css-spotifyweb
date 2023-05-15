@@ -242,7 +242,6 @@ main{
 
 #navbar-music ul{
     gap: 20px;
-    font-size: 12px;
 }
 
 .popular-artists img{
@@ -253,7 +252,7 @@ main{
 }
 
 #navbar-music a{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /*  Footer */
@@ -292,8 +291,7 @@ footer > *{
     position: relative;
 }
 
-.progress-bar::after{
-    content: '';
+.progress-bar .value{
     display: inline-block;
     position: absolute;
     background-color: white;
@@ -364,8 +362,20 @@ i:hover{
     transform: scale(1.2);
 }
 
-.progress-bar:hover::after{
+.progress-bar .value:hover{
     background-color: green;
+}
+
+.value:hover .marker{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    border: 2px solid white;
 }
 
 .navbar-top a:focus{
@@ -378,8 +388,16 @@ i:hover{
 }
 
 #navbar-music a:focus{
-    border-bottom: 2px solid green;
     color: white;
+}
+
+#navbar-music a:focus:after{
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background-color: green;
+    margin: 0 auto;
 }
 
 .album-img:hover::before{
@@ -438,7 +456,7 @@ i:hover{
     }
 }
 
-/* Tablet */
+/* Tablet */                          
 
 @media screen and (min-width: 768px){
     .playlist-music{
